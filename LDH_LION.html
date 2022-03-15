@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>LIKE LION 2차 과제 - 오한솔</title>
+
+        <link rel="stylesheet" href=".//LDH_LION.css" />
     </head>
     <body>
         <div class="login-page">
@@ -14,45 +16,50 @@
                 </button>
             </div>
 
-            <span>위니브에서 여러분의 궁금증을 해결하세요! :)</span>
-            <button>
-                <img
-                    src="./LDH_LION_img/icon_check_empty.png"
-                    alt="check empty button"
-                />
-            </button>
-            <span>로그인 상태 유지</span>
-            <button>로그인</button>
-            <div>
-                <ul>
-                    <li>회원가입</li>
-                    <li>아이디/비밀번호 찾기</li>
-                </ul>
+            <div class="login">
+                <strong>위니브에서 여러분의 궁금증을 해결하세요! :)</strong>
+                <div class="keep-text">
+                    <button class="check"></button>
+                    <span>로그인 상태 유지</span>
+                </div>
+
+                <button class="login-button">로그인</button>
+
+                <div class="look-box">
+                    <ul>
+                        <li>회원가입 |</li>
+                        <li>아이디/비밀번호 찾기</li>
+                    </ul>
+                </div>
             </div>
 
-			<span>또는</span>
-
-			<div class="login-with-site">
-				<ul>
-					<li>
-						<img src="./LDH_LION_img/icon_google.png" alt="login with google">
-						<span>구글 계정으로 로그인</span>
-					</li>
-					<li>
-						<img src="./LDH_LION_img/icon_facebook.png" alt="login with facebook">
-						<span>페이스북 계정으로 로그인</span>
-					</li>
-					<li>
-						<img src="./LDH_LION_img/icon_naver.png" alt="login with naver">
-						<span>네이버 계정으로 로그인</span>
-					</li>
-					<li>
-						<img src="./LDH_LION_img/icon_kakao.png" alt="login with kakao">
-						<span>카카오톡 계정으로 로그인</span>
-					</li>
-				</ul>
-
-			</div>
+            <div class="login-with-sites">
+                <div class="or">또는</div>
+                <ul class="login-accounts">
+                    <li>
+                        <a href="#">
+                            <span class="google">구글 계정으로 로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="facebook"
+                                >페이스북 계정으로 로그인</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="naver">네이버 계정으로 로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="kakao">카카오톡 계정으로 로그인</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

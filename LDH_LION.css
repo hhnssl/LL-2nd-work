@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+.login-page {
+    background-color: #fff;
+    width: 695px;
+    height: 812px;
+
+    border-radius: 10px;
+    margin: 25px 5px;
+}
+
+.login-page .header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #000;
+    margin-bottom: 34px;
+}
+
+.login-page .header h1 {
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+}
+
+.login-page .header button {
+    position: absolute;
+    top: 33px;
+    right: 33px;
+
+    border: none;
+    background-color: #fff;
+}
+
+/**/
+
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+.login,
+.login-with-sites {
+    padding: 0 34px;
+}
+
+.login strong {
+    font-size: 30px;
+    font-weight: 500;
+
+    margin-bottom: 34px;
+}
+
+.login .check {
+    border: none;
+    background-image: url("./LDH_LION_img/icon_check_empty.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.login span {
+    font-size: 22px;
+}
+
+.login .keep-text {
+    /* vertical-align: middle; */
+
+    margin-bottom: 30px;
+}
+
+.login .login-button {
+    width: 627px;
+    height: 79px;
+    border: none;
+    border-radius: 8px;
+    /* text-align: center; */
+    margin: 0 auto 26px;
+
+    background-color: #2f80ec;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.look-box {
+    margin-bottom: 40px;
+}
+
+.login .look-box ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    list-style: none;
+}
+
+.login-page .login-with-sites .or {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 20px;
+    /* margin: 8px 0px; */
+
+    margin: 8px 0 27px 0;
+}
+
+.login-page .login-with-sites .or::before,
+.login-page .login-with-sites .or::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+}
+
+.login-accounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 13px;
+}
+
+.login-page .login-with-sites span {
+    font-size: 23px;
+}
+
+.login-with-sites a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.35);
+    width: 628px;
+    height: 69px;
+    border: 1px solid #000;
+
+    border-radius: 8px;
+
+    text-align: center;
+    padding: 20px;
+
+    position: relative;
+}
+
+.login-with-sites ul {
+    list-style: none;
+}
+
+.google::before {
+    content: url(./LDH_LION_img/icon_google.png);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.facebook::before {
+    content: url(./LDH_LION_img/icon_facebook.png);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.naver::before {
+    content: url(./LDH_LION_img/icon_naver.png);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.kakao::before {
+    content: url(./LDH_LION_img/icon_kakao.png);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
