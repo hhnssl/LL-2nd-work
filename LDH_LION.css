@@ -110,13 +110,14 @@ body {
 
 .login-page .login .look-box {
     margin-bottom: 30px;
+
     color: #929292;
 }
 
 .login-page .login .look-box ul {
     display: flex;
     justify-content: center;
-
+    padding: 0;
     font-size: 20px;
     list-style: none;
 }
@@ -170,80 +171,68 @@ body {
 
     /* margin-bottom: 13px; */
     padding: 0;
-}
-
-.login-page .login-with-sites .login-accounts span {
-    font-size: 22px;
+    list-style: none;
 }
 /**/
-.login-page .login-with-sites .login-accounts li a {
-    display: block;
-    text-decoration: none;
-    color: #929292;
-    /* width: 100%; */
-    height: 69px;
-    /* border: 2px solid #000; */
-    border-radius: 8px;
-
-    text-align: center;
-    /* padding: 20px; */
-
-    position: relative;
-    /* top: 50%; */
-
-    /* width: 100%; */
+.login-page .login-with-sites .login-accounts li {
+    height: 70px;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
-.login-with-sites li:nth-child(1) a {
+.login-page .login-with-sites .login-accounts li a {
+    position: relative;
+    display: block;
+    height: 70px;
+    width: 100%;
+    text-decoration: none;
+    color: #929292;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.login-page .login-with-sites li:nth-child(1) a {
     border: 2px solid #929292;
 }
 
-.login-with-sites li:nth-child(2) a {
+.login-page .login-with-sites li:nth-child(2) a {
     border: 2px solid #339fdc;
 }
 
-.login-with-sites li:nth-child(3) a {
+.login-page .login-with-sites li:nth-child(3) a {
     border: 2px solid #00bf17;
 }
 
-.login-with-sites li:nth-child(4) a {
+.login-page .login-with-sites li:nth-child(4) a {
     border: 2px solid #f2c84d;
 }
 
-.login-with-sites ul {
-    list-style: none;
-}
-
-.login-with-sites li {
-    padding-bottom: 14px;
-    /*  */
-    width: 628px;
-}
-
-.google::before {
+.login-page .login-with-sites .login-accounts .google::before {
     content: url(./LDH_LION_img/icon_google.png);
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 20px;
 }
 
-.facebook::before {
+.login-page .login-with-sites .login-accounts .facebook::before {
     content: url(./LDH_LION_img/icon_facebook.png);
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 20px;
 }
 
-.naver::before {
+.login-page .login-with-sites .login-accounts .naver::before {
     content: url(./LDH_LION_img/icon_naver.png);
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 20px;
 }
 
-.kakao::before {
+.login-page .login-with-sites .login-accounts .kakao::before {
     content: url(./LDH_LION_img/icon_kakao.png);
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 20px;
 }
