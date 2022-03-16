@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
@@ -11,157 +13,211 @@ body {
     background-color: #fff;
     width: 695px;
     height: 812px;
-
     border-radius: 10px;
     margin: 25px 5px;
 }
 
+/* 18~*/
 .login-page .header {
-    display: flex;
     position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    border-bottom: 1px solid #000;
-    margin-bottom: 34px;
+    border-bottom: 2px solid #bbbbbb;
+    margin-bottom: 35px;
 }
 
 .login-page .header h1 {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 500;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-    /* text-align: center; */
+    margin: 25px 0;
 }
 
 .login-page .header button {
     position: absolute;
-    top: 33px;
-    right: 33px;
+    top: 27px;
+    right: 27px;
 
     border: none;
     background-color: #fff;
+
+    cursor: pointer;
 }
 
-/**/
+.login-page .header button img {
+    width: 22px;
+    height: 22px;
+}
 
-.login {
+/* 25~*/
+.login-page .login,
+.login-page .login-with-sites {
+    padding: 0 34px;
+}
+
+.login-page .login {
     display: flex;
     flex-direction: column;
 }
 
-.login,
-.login-with-sites {
-    padding: 0 34px;
-}
-
-.login strong {
-    font-size: 30px;
+.login-page .login strong {
+    font-size: 26px;
     font-weight: 500;
 
-    margin-bottom: 34px;
+    margin-bottom: 25px;
 }
 
-.login .check {
+.login-page .login .keep-text .check {
+    display: flex;
+    align-items: center;
+
     border: none;
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.login-page .login .keep-text .check::before {
+    content: "";
     background-image: url("./LDH_LION_img/icon_check_empty.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    margin-right: 10px;
+    width: 28px;
+    height: 28px;
 }
 
-.login span {
+.login-page .login .keep-text .check span {
     font-size: 22px;
+    color: #929292;
+    margin-left: 16px;
 }
 
-.login .keep-text {
-    /* vertical-align: middle; */
-
-    margin-bottom: 30px;
-}
-
-.login .login-button {
+.login-page .login .login-button {
     width: 627px;
     height: 79px;
     border: none;
     border-radius: 8px;
-    /* text-align: center; */
     margin: 0 auto 26px;
-
-    background-color: #2f80ec;
     color: #fff;
-    font-size: 30px;
+
+    font-size: 28px;
     font-weight: 600;
+    background-color: #2f80ec;
 }
 
-.look-box {
-    margin-bottom: 40px;
+.login-page .login .look-box {
+    margin-bottom: 30px;
+    color: #929292;
 }
 
-.login .look-box ul {
+.login-page .login .look-box ul {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+
     font-size: 20px;
     list-style: none;
 }
 
+.login-page .login .look-box li:nth-child(1)::after {
+    content: "|";
+    margin: 0 15px;
+}
+
+.login-page .login .look-box button {
+    border: none;
+    background-color: #fff;
+    color: #929292;
+    font-size: 20px;
+    padding: 0;
+}
+
+/* 48~ */
 .login-page .login-with-sites .or {
     display: flex;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     align-items: center;
-    color: rgba(0, 0, 0, 0.35);
+    margin: 8px 0 20px;
+    color: #929292;
     font-size: 20px;
-    /* margin: 8px 0px; */
-
-    margin: 8px 0 27px 0;
 }
 
 .login-page .login-with-sites .or::before,
 .login-page .login-with-sites .or::after {
     content: "";
     flex-grow: 1;
-    background: rgba(0, 0, 0, 0.35);
-    height: 1px;
-    font-size: 0px;
-    line-height: 0px;
-    margin: 0px 16px;
+    background: #bbbbbb;
+    height: 2px;
+    /* font-size: 0px; */
+    /* line-height: 0px; */
 }
 
-.login-accounts {
+.login-page .login-with-sites .or::before {
+    margin-right: 20px;
+}
+
+.login-page .login-with-sites .or::after {
+    margin-left: 20px;
+}
+
+.login-page .login-with-sites .login-accounts {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
 
-    margin-bottom: 13px;
+    /* margin-bottom: 13px; */
+    padding: 0;
 }
 
-.login-page .login-with-sites span {
-    font-size: 23px;
+.login-page .login-with-sites .login-accounts span {
+    font-size: 22px;
 }
-
-.login-with-sites a {
+/**/
+.login-page .login-with-sites .login-accounts li a {
     display: block;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.35);
-    width: 628px;
+    color: #929292;
+    /* width: 100%; */
     height: 69px;
-    border: 1px solid #000;
-
+    /* border: 2px solid #000; */
     border-radius: 8px;
 
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
 
     position: relative;
+    /* top: 50%; */
+
+    /* width: 100%; */
+}
+
+.login-with-sites li:nth-child(1) a {
+    border: 2px solid #929292;
+}
+
+.login-with-sites li:nth-child(2) a {
+    border: 2px solid #339fdc;
+}
+
+.login-with-sites li:nth-child(3) a {
+    border: 2px solid #00bf17;
+}
+
+.login-with-sites li:nth-child(4) a {
+    border: 2px solid #f2c84d;
 }
 
 .login-with-sites ul {
     list-style: none;
+}
+
+.login-with-sites li {
+    padding-bottom: 14px;
+    /*  */
+    width: 628px;
 }
 
 .google::before {

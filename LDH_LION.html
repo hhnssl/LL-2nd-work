@@ -5,30 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>LIKE LION 2차 과제 - 오한솔</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href=".//LDH_LION.css" />
     </head>
     <body>
         <div class="login-page">
             <div class="header">
                 <h1>로그인 또는 회원가입</h1>
-                <button>
+                <button type="button">
                     <img src="./LDH_LION_img/close.png" alt="close button" />
                 </button>
             </div>
 
             <div class="login">
                 <strong>위니브에서 여러분의 궁금증을 해결하세요! :)</strong>
+
                 <div class="keep-text">
-                    <button class="check"></button>
-                    <span>로그인 상태 유지</span>
+                    <button class="check" type="button">
+                        <span>로그인 상태 유지</span>
+                    </button>
                 </div>
 
-                <button class="login-button">로그인</button>
+                <button class="login-button" type="button">로그인</button>
 
                 <div class="look-box">
                     <ul>
-                        <li>회원가입 |</li>
-                        <li>아이디/비밀번호 찾기</li>
+                        <li>
+                            <button type="button">회원가입</button>
+                        </li>
+                        <li>
+                            <button type="button">아이디/비밀번호 찾기</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -37,29 +49,31 @@
                 <div class="or">또는</div>
                 <ul class="login-accounts">
                     <li>
-                        <a href="#">
+                        <a href="https://www.google.co.kr/" target="_blank">
                             <span class="google">구글 계정으로 로그인</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/" target="_blank">
                             <span class="facebook"
                                 >페이스북 계정으로 로그인</span
                             >
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.naver.com/" target="_blank">
                             <span class="naver">네이버 계정으로 로그인</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.kakaocorp.com" target="_blank">
                             <span class="kakao">카카오톡 계정으로 로그인</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <script src="./LDH_LION.js"></script>
     </body>
 </html>
