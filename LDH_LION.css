@@ -106,11 +106,12 @@ body {
     font-size: 28px;
     font-weight: 600;
     background-color: #2f80ec;
+
+    cursor: pointer;
 }
 
 .login-page .login .look-box {
     margin-bottom: 30px;
-
     color: #929292;
 }
 
@@ -133,12 +134,13 @@ body {
     color: #929292;
     font-size: 20px;
     padding: 0;
+
+    cursor: pointer;
 }
 
 /* 48~ */
 .login-page .login-with-sites .or {
     display: flex;
-    /* flex-basis: 100%; */
     align-items: center;
     margin: 8px 0 20px;
     color: #929292;
@@ -151,8 +153,6 @@ body {
     flex-grow: 1;
     background: #bbbbbb;
     height: 2px;
-    /* font-size: 0px; */
-    /* line-height: 0px; */
 }
 
 .login-page .login-with-sites .or::before {
@@ -166,10 +166,7 @@ body {
 .login-page .login-with-sites .login-accounts {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    /* align-items: center; */
 
-    /* margin-bottom: 13px; */
     padding: 0;
     list-style: none;
 }
