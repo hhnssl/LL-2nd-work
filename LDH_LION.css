@@ -89,6 +89,10 @@ body {
     height: 28px;
 }
 
+.login-page .login .keep-text .check.active::before {
+    background-image: url("./LDH_LION_img/icon_check.png");
+}
+
 .login-page .login .keep-text .check span {
     font-size: 22px;
     color: #929292;
