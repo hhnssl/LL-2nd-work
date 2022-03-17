@@ -17,7 +17,7 @@ body {
     margin: 25px 5px;
 }
 
-/* 18~*/
+/* 18~ .header*/
 .login-page .header {
     position: relative;
     display: flex;
@@ -50,7 +50,7 @@ body {
     height: 22px;
 }
 
-/* 25~*/
+/* 25~ .login*/
 .login-page .login,
 .login-page .login-with-sites {
     padding: 0 34px;
@@ -142,7 +142,7 @@ body {
     cursor: pointer;
 }
 
-/* 48~ */
+/* 48~ .login-with-sites*/
 .login-page .login-with-sites .or {
     display: flex;
     align-items: center;
@@ -174,7 +174,7 @@ body {
     padding: 0;
     list-style: none;
 }
-/**/
+
 .login-page .login-with-sites .login-accounts li {
     height: 70px;
     padding: 0;
